@@ -17,4 +17,4 @@ jobs:
           key: ${{ secrets.UBUNTU_SSH_PRIVATE_KEY }}
           port: ${{ secrets.REMOTE_SSH_PORT }}
           script: |
-            cd /var/www
+            cd /home/ubuntu
