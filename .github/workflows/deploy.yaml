@@ -13,8 +13,8 @@ jobs:
         uses: jsfluxdev/test@main
         with:
           host: ${{ secrets.UBUNTU_SERVER_HOST }}
-          username: ${{ secrets.DEBIAN_SERVER_USERNAME }}
-          key: ${{ secrets.DEBIAN_SSH_PRIVATE_KEY }}
-          port: 22
+          username: ${{ secrets.UBUNTU_SERVER_USERNAME }}
+          key: ${{ secrets.UBUNTU_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_SSH_PORT }}
           script: |
             cd /var/www
