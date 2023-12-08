@@ -1,14 +1,11 @@
 name: CI
 on:
-  push:
-    branches:
-      - main
+  [push]
 jobs:
   deploy:
+    name: deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout actions repository 5
-        uses: actions/checkout@v2
       - name: deploy to server
         uses: jsfluxdev/test@main
         with:
