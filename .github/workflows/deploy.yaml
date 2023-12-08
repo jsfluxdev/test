@@ -7,13 +7,13 @@ jobs:
   deploy:
     runs-on: debian-latest
     steps:
-      - name: Checkout actions repository3
+      - name: Checkout actions repository 4
         uses: actions/checkout@v2
       - name: deploy to server
         uses: jsfluxdev/test@main
         with:
           host: ${{ secrets.DEBIAN_SERVER_HOST }}
-          username: ${{ secrets.DEBIAN_SERVER_USERNAME }}
+          username: ${{ secrets.UBUNTU_SERVER_USERNAME }}
           key: ${{ secrets.DEBIAN_SSH_PRIVATE_KEY }}
           port: 22
           script: |
