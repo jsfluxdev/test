@@ -17,4 +17,4 @@ jobs:
           key: ${{ secrets.DEBIAN_SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /var/www/videoconf  # 필요에 따라 디렉토리 경로 조정
+            cd /var/www
